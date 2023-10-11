@@ -5,5 +5,5 @@ cd ~/ChemicalDatabase/
 git pull https://github.com/dandude975/ChemicalDatabase
 
 open ~/ChemicalDatabase/pythonRun
-SUDO_ASKPASS=/usr/X11R6/bin/ssh-askpass sudo -A pkill install
-SUDO_ASKPASS=/usr/X11R6/bin/ssh-askpass sudo -A pkill LetTheBubblingCommence
+SUDO_ASKPASS=/Users/local/bin/askpass sudo -A pkill install
+SUDO_ASKPASS=/Users/local/bin/askpass sudo -A pkill LetTheBubblingCommence
