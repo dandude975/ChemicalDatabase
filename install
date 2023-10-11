@@ -16,5 +16,6 @@ pyenv install 3.10
 
 python3 -m ensurepip
 python3 -m pip install mysql-connector-python
+Python3 ~/ChemicalDatabase/firstLaunch.py
 
-open ~/ChemicalDatabase/run
+rm ~/ChemicalDatabase/install

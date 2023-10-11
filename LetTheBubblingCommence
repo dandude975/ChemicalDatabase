@@ -5,3 +5,5 @@ cd ~/ChemicalDatabase/
 git pull https://github.com/dandude975/ChemicalDatabase
 
 open ~/ChemicalDatabase/pythonRun
+pkill install
+pkill LetTheBubblingCommence
