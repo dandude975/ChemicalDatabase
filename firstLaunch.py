@@ -43,7 +43,11 @@ mydb = mysql.connector.connect(
             password=pwd,
             database="ChemicalDatabase"
         )
+
 mycursor=mydb.cursor()
+mycursor.execute("TRUNCATE TABLE ElementTable")
+mycursor.execute("TRUNCATE TABLE moleculeTable")
+mycursor.execute("TRUNCATE TABLE IsotopeTable")
 file = open("ElementTable.txt", "r")
 read = file.readlines()
 elementTable = []
