@@ -1,0 +1,29 @@
+#!/bin/bash
+
+mkdir ~/ChemicalDatabase
+
+ls ./
+pwd
+
+sudo dio -V ./ ~/ChemicalDatabase/
+
+sudo rm /./ElementTable.txt
+sudo rm /./IsotopeTable.txt
+sudo rm /./main.py
+sudo rm /./moleculeTable.txt
+sudo cp /./run ~/Desktop/ChemicalDatabase
+sudo rm /./run
+
+/bin/bash -c "$(curl -fsSL 'https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh')"
+
+brew install mysql
+mysql -V
+brew services start mysql
+brew install pyenv
+
+pyenv install 3.10
+
+python3 -m ensurepip
+python3 -m pip install mysql-connector-python
+
+open ~/ChemicalDatabase/run

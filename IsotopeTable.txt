@@ -1,0 +1,10 @@
+Hydrogen|Deuterium|1|0.0156|1|n|n|g|-254.43|-249.51|
+Hydrogen|Tritium|2|0|1|n|n|g|-252.5|-248.12|
+Carbon|Carbon-12|6|98.9|6|n|n|s|3550|3825|
+Carbon|Carbon-13|7|1.1|6|n|n|s|3630|3630|
+Carbon|Carbon-14|8|0.000000000001|6|y|n|s|3652|4827|
+Nitrogen|Nitrogen-14|7|99.635|7|n|n|g|-210.01|-195.79|
+Nitrogen|Nitrogen-15|8|0.365|7|n|n|g|-210.01|-195.79|
+Oxygen|Oxygen-16|8|99.757|8|n|n|g|-218.796|-182.9|
+Oxygen|Oxygen-17|9|0.038|8|n|n|g|-218.79|182.96|
+Oxygen|Oxygen-18|10|0.205|8|n|n|g|-218.79|-182.96|
