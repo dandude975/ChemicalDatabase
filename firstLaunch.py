@@ -35,6 +35,15 @@ def ignore_DEV():
                      "isotopPercentage VARCHAR(255), atomicNumber VARCHAR(255), "
                      "radioactive VARCHAR(255), magnetic VARCHAR(255), stateAtRoomTemp VARCHAR(255), meltingPoint VARCHAR(255), "
                      "boilingPoint VARCHAR(255))")
+
+
+mydb = mysql.connector.connect(
+            host="localhost",
+            user=Uname,
+            password=pwd,
+            database="ChemicalDatabase"
+        )
+mycursor=mydb.cursor()
 file = open("ElementTable.txt", "r")
 read = file.readlines()
 elementTable = []
