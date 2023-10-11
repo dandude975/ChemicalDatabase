@@ -4,6 +4,4 @@ cd ~/ChemicalDatabase/
 
 git pull https://github.com/dandude975/ChemicalDatabase
 
-
-
-open -n python3 ~/ChemicalDatabase/main.py
+open -n pythonRun
