@@ -21,28 +21,22 @@ while not login:
         print()
         login = True
 
-def ignore_DEV():
-    mycursor.execute("CREATE DATABASE ChemicalDatabase")
-    mycursor.execute("CREATE TABLE ElementTable (elementSymbol VARCHAR(255), name VARCHAR(255), atomicNumber VARCHAR(255), "
-                     "atomicWeight VARCHAR(255), electronCount VARCHAR(255), "
-                     "elementGroup VARCHAR(255), radioactive VARCHAR(255), magnetic VARCHAR(255), stateAtRoomTemp VARCHAR(255), "
-                     "meltingPoint VARCHAR(255), boilingPoint VARCHAR(255))")
-    mycursor.execute("CREATE TABLE moleculeTable (moleculeFormula VARCHAR(255), name VARCHAR(255), electronCount VARCHAR(255), "
-                     "bondType VARCHAR(255), bondDiagram VARCHAR(255), "
-                     "radioactive VARCHAR(255), magnetic VARCHAR(255), stateAtRoomTemp VARCHAR(255), meltingPoint VARCHAR(255), "
-                     "boilingPoint VARCHAR(255))")
-    mycursor.execute("CREATE TABLE IsotopeTable (baseElement VARCHAR(255), name VARCHAR(255), neutronCount VARCHAR(255), "
-                     "isotopPercentage VARCHAR(255), atomicNumber VARCHAR(255), "
-                     "radioactive VARCHAR(255), magnetic VARCHAR(255), stateAtRoomTemp VARCHAR(255), meltingPoint VARCHAR(255), "
-                     "boilingPoint VARCHAR(255))")
-
-
+mycursor.execute("CREATE DATABASE ChemicalDatabase")
 mydb = mysql.connector.connect(
-            host="localhost",
-            user=Uname,
-            password=pwd,
             database="ChemicalDatabase"
         )
+mycursor.execute("CREATE TABLE ElementTable (elementSymbol VARCHAR(255), name VARCHAR(255), atomicNumber VARCHAR(255), "
+                 "atomicWeight VARCHAR(255), electronCount VARCHAR(255), "
+                 "elementGroup VARCHAR(255), radioactive VARCHAR(255), magnetic VARCHAR(255), stateAtRoomTemp VARCHAR(255), "
+                 "meltingPoint VARCHAR(255), boilingPoint VARCHAR(255))")
+mycursor.execute("CREATE TABLE moleculeTable (moleculeFormula VARCHAR(255), name VARCHAR(255), electronCount VARCHAR(255), "
+                 "bondType VARCHAR(255), bondDiagram VARCHAR(255), "
+                 "radioactive VARCHAR(255), magnetic VARCHAR(255), stateAtRoomTemp VARCHAR(255), meltingPoint VARCHAR(255), "
+                 "boilingPoint VARCHAR(255))")
+mycursor.execute("CREATE TABLE IsotopeTable (baseElement VARCHAR(255), name VARCHAR(255), neutronCount VARCHAR(255), "
+                 "isotopPercentage VARCHAR(255), atomicNumber VARCHAR(255), "
+                 "radioactive VARCHAR(255), magnetic VARCHAR(255), stateAtRoomTemp VARCHAR(255), meltingPoint VARCHAR(255), "
+                 "boilingPoint VARCHAR(255))")
 
 mycursor=mydb.cursor()
 mycursor.execute("TRUNCATE TABLE ElementTable")
