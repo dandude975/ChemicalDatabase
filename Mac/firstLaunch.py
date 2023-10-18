@@ -58,11 +58,11 @@ for x in elementTable:
 file.close()
 file = open("moleculeTable.txt", "r")
 read = file.readlines()
-elementTable = []
+moleculeTable = []
 for x in read:
     x = x.rstrip("|")
-    elementTable.append(x.split("|"))
-for x in elementTable:
+    moleculeTable.append(x.split("|"))
+for x in moleculeTable:
     sql = "INSERT INTO MoleculeTable (moleculeFormula, name, electronCount, bondType, bondDiagram, " \
           "radioactive, magnetic, stateAtRoomTemp, meltingPoint, boilingPoint)" \
           "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
@@ -72,11 +72,11 @@ for x in elementTable:
 file.close()
 file = open("IsotopeTable.txt", "r")
 read = file.readlines()
-elementTable = []
+isotopeTable = []
 for x in read:
     x = x.rstrip("|")
-    elementTable.append(x.split("|"))
-for x in elementTable:
+    isotopeTable.append(x.split("|"))
+for x in isotopeTable:
     sql = "INSERT INTO IsotopeTable (baseElement, name, neutronCount, isotopPercentage, atomicNumber, " \
           "radioactive, magnetic, stateAtRoomTemp, meltingPoint, boilingPoint)" \
           "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
