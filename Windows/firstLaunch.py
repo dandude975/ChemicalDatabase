@@ -84,5 +84,6 @@ for x in isotopeTable:
     mycursor.execute(sql, val)
     mydb.commit()
 file.close()
-os.system("open ~/ChemicalDatabase/LetTheBubblingCommence")
+os.system("cd")
+os.system("\ChemicalDatabase\LetTheBubblingCommence")
 exit()
