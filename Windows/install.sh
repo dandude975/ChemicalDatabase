@@ -1,11 +1,15 @@
 #!/bin/bash
 
-powershell -command "start-process PowerShell -verb runas"
-powershell -command "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))"
+start-process powershell -verb runas
+Set-ExecutionPolicy AllSigned
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
+choco
 choco upgrade chocolatey
 choco install git
 git -V
+
+cd \%HOMEPATH%
 
 git clone https://github.com/dandude975/ChemicalDatabase
 
