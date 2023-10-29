@@ -1,0 +1,6 @@
+H2O|Water|10|Covalent|H-O-H|n|n|l|0|100|
+C2H6|Ethane|18|Covalent|-|n|n|g|-182.8|-88.5|
+CH4|Methane|10|Covalent|-|n|n|g|-182.5|-162|
+O2|Oxygen Gas|16|Covalent|O=O|n|n|g|-218.79|-182.96|
+CO2|Carbon Dioxide|24|Covalent|C=O=C|n|n|g|-56.6|-56.6|
+CO|Carbon Monoxide|14|Covalent|C=O|n|n|g|-205|-191.5|

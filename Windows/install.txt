@@ -1,0 +1,4 @@
+#!/bin/bash
+
+python3 -m ensurepip
+python3 /Users/daniel/PycharmProjects/ChemicalDatabase/installation.py

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd ~/ChemicalDatabase/
+
+git pull https://github.com/dandude975/ChemicalDatabase
+
+open ~/ChemicalDatabase/pythonRun
+SUDO_ASKPASS=/Users/local/bin/askpass sudo -A pkill install
+SUDO_ASKPASS=/Users/local/bin/askpass sudo -A pkill LetTheBubblingCommence
